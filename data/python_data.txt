@@ -1,0 +1,48 @@
+(.venv) alejandroalemanaleman@MacBook-Air-de-Alejandro-3 MatrixMultiplication % pytest --benchmark-group-by=func -s    
+========================================================================= test session starts =========================================================================
+platform darwin -- Python 3.12.0, pytest-8.3.3, pluggy-1.5.0
+benchmark: 4.0.0 (defaults: timer=time.perf_counter disable_gc=False min_rounds=5 min_time=0.000005 max_time=1.0 calibration_precision=10 warmup=False warmup_iterations=100000)
+rootdir: /Users/alejandroalemanaleman/PycharmProjects/BigData/MatrixMultiplication
+plugins: benchmark-4.0.0
+collected 4 items                                                                                                                                                     
+
+test_benchmark.py Uso de memoria antes del benchmark para 10x10: 43.20 MB
+Uso de CPU antes del benchmark para 10x10: 0.0%
+Uso de memoria después del benchmark para 10x10: 43.20 MB
+Uso de CPU después del benchmark para 10x10: 0.00%
+Memoria utilizada durante el benchmark para 10x10: 0.01 MB
+CPU utilizada durante el benchmark para 10x10: 0.00%
+.Uso de memoria antes del benchmark para 100x100: 41.58 MB
+Uso de CPU antes del benchmark para 100x100: 0.0%
+Uso de memoria después del benchmark para 100x100: 40.67 MB
+Uso de CPU después del benchmark para 100x100: 0.00%
+Memoria utilizada durante el benchmark para 100x100: 0.91 MB
+CPU utilizada durante el benchmark para 100x100: 0.00%
+.Uso de memoria antes del benchmark para 500x500: 46.45 MB
+Uso de CPU antes del benchmark para 500x500: 0.0%
+Uso de memoria después del benchmark para 500x500: 18.59 MB
+Uso de CPU después del benchmark para 500x500: 0.00%
+Memoria utilizada durante el benchmark para 500x500: 27.86 MB
+CPU utilizada durante el benchmark para 500x500: 0.00%
+.Uso de memoria antes del benchmark para 1000x1000: 57.23 MB
+Uso de CPU antes del benchmark para 1000x1000: 0.0%
+Uso de memoria después del benchmark para 1000x1000: 20.48 MB
+Uso de CPU después del benchmark para 1000x1000: 0.00%
+Memoria utilizada durante el benchmark para 1000x1000: 36.75 MB
+CPU utilizada durante el benchmark para 1000x1000: 0.00%
+.
+
+
+------------------------------------------------------------------------------------------- benchmark 'test_basic_matrix_multiplication': 4 tests -------------------------------------------------------------------------------------------
+Name (time in us)                                      Min                        Max                       Mean            StdDev                     Median               IQR            Outliers         OPS            Rounds  Iterations
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+test_basic_matrix_multiplication[10]              204.9250 (1.0)             204.9250 (1.0)             204.9250 (1.0)      0.0000 (1.0)             204.9250 (1.0)      0.0000 (1.0)           0;0  4,879.8342 (1.0)           1           5
+test_basic_matrix_multiplication[100]          56,934.8332 (277.83)       56,934.8332 (277.83)       56,934.8332 (277.83)   0.0000 (1.0)          56,934.8332 (277.83)   0.0000 (1.0)           0;0     17.5639 (0.00)          1           5
+test_basic_matrix_multiplication[500]       8,711,772.9000 (>1000.0)   8,711,772.9000 (>1000.0)   8,711,772.9000 (>1000.0)  0.0000 (1.0)       8,711,772.9000 (>1000.0)  0.0000 (1.0)           0;0      0.1148 (0.00)          1           5
+test_basic_matrix_multiplication[1000]     74,102,750.6584 (>1000.0)  74,102,750.6584 (>1000.0)  74,102,750.6584 (>1000.0)  0.0000 (1.0)      74,102,750.6584 (>1000.0)  0.0000 (1.0)           0;0      0.0135 (0.00)          1           5
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Legend:
+  Outliers: 1 Standard Deviation from Mean; 1.5 IQR (InterQuartile Range) from 1st Quartile and 3rd Quartile.
+  OPS: Operations Per Second, computed as 1 / Mean
+=================================================================== 4 passed in 2603.22s (0:43:23) ====================================================================

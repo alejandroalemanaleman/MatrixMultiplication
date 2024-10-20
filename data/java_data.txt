@@ -1,0 +1,156 @@
+
+/Library/Java/JavaVirtualMachines/amazon-corretto-11.jdk/Contents/Home/bin/java -javaagent:/Applications/IntelliJ IDEA Ultimate 2023.2.5.app/Contents/lib/idea_rt.jar=60810:/Applications/IntelliJ IDEA Ultimate 2023.2.5.app/Contents/bin -Dfile.encoding=UTF-8 -classpath /Users/alejandroalemanaleman/Downloads/jmh-project-2/target/test-classes:/Users/alejandroalemanaleman/Downloads/jmh-project-2/target/classes:/Users/alejandroalemanaleman/.m2/repository/org/openjdk/jmh/jmh-core/1.35/jmh-core-1.35.jar:/Users/alejandroalemanaleman/.m2/repository/net/sf/jopt-simple/jopt-simple/5.0.4/jopt-simple-5.0.4.jar:/Users/alejandroalemanaleman/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/Users/alejandroalemanaleman/.m2/repository/org/openjdk/jmh/jmh-generator-annprocess/1.35/jmh-generator-annprocess-1.35.jar org.openjdk.jmh.Main org.example.MatrixMultiplicationBenchmarking.multiplication$
+# JMH version: 1.35
+# VM version: JDK 11.0.24, OpenJDK 64-Bit Server VM, 11.0.24+8-LTS
+# VM invoker: /Library/Java/JavaVirtualMachines/amazon-corretto-11.jdk/Contents/Home/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA Ultimate 2023.2.5.app/Contents/lib/idea_rt.jar=60810:/Applications/IntelliJ IDEA Ultimate 2023.2.5.app/Contents/bin -Dfile.encoding=UTF-8
+# Blackhole mode: full + dont-inline hint (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 1 ms each
+# Measurement: 5 iterations, 1 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.example.MatrixMultiplicationBenchmarking.multiplication
+# Parameters: (n = 10)
+
+# Run progress: 0,00% complete, ETA 00:00:00
+# Fork: 1 of 1
+# Warmup Iteration   1: 0,051 ms/op
+# Warmup Iteration   2: 0,011 ms/op
+Iteration   1: 0,006 ms/op
+Iteration   2: 0,009 ms/op
+Iteration   3: 0,006 ms/op
+Iteration   4: 0,002 ms/op
+Iteration   5: _______________________________________________
+Matrix size: 10x10
+Total Memory used: 1 MB
+Total CPU time used: 13853000 nanoseconds
+_______________________________________________
+0,002 ms/op
+
+
+Result "org.example.MatrixMultiplicationBenchmarking.multiplication":
+  0,005 ±(99.9%) 0,013 ms/op [Average]
+  (min, avg, max) = (0,002, 0,005, 0,009), stdev = 0,003
+  CI (99.9%): [≈ 0, 0,018] (assumes normal distribution)
+
+
+# JMH version: 1.35
+# VM version: JDK 11.0.24, OpenJDK 64-Bit Server VM, 11.0.24+8-LTS
+# VM invoker: /Library/Java/JavaVirtualMachines/amazon-corretto-11.jdk/Contents/Home/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA Ultimate 2023.2.5.app/Contents/lib/idea_rt.jar=60810:/Applications/IntelliJ IDEA Ultimate 2023.2.5.app/Contents/bin -Dfile.encoding=UTF-8
+# Blackhole mode: full + dont-inline hint (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 1 ms each
+# Measurement: 5 iterations, 1 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.example.MatrixMultiplicationBenchmarking.multiplication
+# Parameters: (n = 100)
+
+# Run progress: 25,00% complete, ETA 00:00:02
+# Fork: 1 of 1
+# Warmup Iteration   1: 5,922 ms/op
+# Warmup Iteration   2: 4,204 ms/op
+Iteration   1: 0,812 ms/op
+Iteration   2: 0,798 ms/op
+Iteration   3: 0,861 ms/op
+Iteration   4: 0,806 ms/op
+Iteration   5: _______________________________________________
+Matrix size: 100x100
+Total Memory used: 2 MB
+Total CPU time used: 20083000 nanoseconds
+_______________________________________________
+0,780 ms/op
+
+
+Result "org.example.MatrixMultiplicationBenchmarking.multiplication":
+  0,811 ±(99.9%) 0,117 ms/op [Average]
+  (min, avg, max) = (0,780, 0,811, 0,861), stdev = 0,030
+  CI (99.9%): [0,694, 0,928] (assumes normal distribution)
+
+
+# JMH version: 1.35
+# VM version: JDK 11.0.24, OpenJDK 64-Bit Server VM, 11.0.24+8-LTS
+# VM invoker: /Library/Java/JavaVirtualMachines/amazon-corretto-11.jdk/Contents/Home/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA Ultimate 2023.2.5.app/Contents/lib/idea_rt.jar=60810:/Applications/IntelliJ IDEA Ultimate 2023.2.5.app/Contents/bin -Dfile.encoding=UTF-8
+# Blackhole mode: full + dont-inline hint (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 1 ms each
+# Measurement: 5 iterations, 1 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.example.MatrixMultiplicationBenchmarking.multiplication
+# Parameters: (n = 500)
+
+# Run progress: 50,00% complete, ETA 00:00:01
+# Fork: 1 of 1
+# Warmup Iteration   1: 447,468 ms/op
+# Warmup Iteration   2: 439,811 ms/op
+Iteration   1: 118,919 ms/op
+Iteration   2: 116,833 ms/op
+Iteration   3: 115,961 ms/op
+Iteration   4: 117,015 ms/op
+Iteration   5: _______________________________________________
+Matrix size: 500x500
+Total Memory used: 8 MB
+Total CPU time used: 1470414000 nanoseconds
+_______________________________________________
+116,781 ms/op
+
+
+Result "org.example.MatrixMultiplicationBenchmarking.multiplication":
+  117,102 ±(99.9%) 4,211 ms/op [Average]
+  (min, avg, max) = (115,961, 117,102, 118,919), stdev = 1,094
+  CI (99.9%): [112,890, 121,313] (assumes normal distribution)
+
+
+# JMH version: 1.35
+# VM version: JDK 11.0.24, OpenJDK 64-Bit Server VM, 11.0.24+8-LTS
+# VM invoker: /Library/Java/JavaVirtualMachines/amazon-corretto-11.jdk/Contents/Home/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA Ultimate 2023.2.5.app/Contents/lib/idea_rt.jar=60810:/Applications/IntelliJ IDEA Ultimate 2023.2.5.app/Contents/bin -Dfile.encoding=UTF-8
+# Blackhole mode: full + dont-inline hint (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 1 ms each
+# Measurement: 5 iterations, 1 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.example.MatrixMultiplicationBenchmarking.multiplication
+# Parameters: (n = 1000)
+
+# Run progress: 75,00% complete, ETA 00:00:01
+# Fork: 1 of 1
+# Warmup Iteration   1: 3882,287 ms/op
+# Warmup Iteration   2: 3821,495 ms/op
+Iteration   1: 1292,278 ms/op
+Iteration   2: 1292,580 ms/op
+Iteration   3: 1237,673 ms/op
+Iteration   4: 1584,513 ms/op
+Iteration   5: _______________________________________________
+Matrix size: 1000x1000
+Total Memory used: 15 MB
+Total CPU time used: 14156942000 nanoseconds
+_______________________________________________
+1254,737 ms/op
+
+
+Result "org.example.MatrixMultiplicationBenchmarking.multiplication":
+  1332,356 ±(99.9%) 550,525 ms/op [Average]
+  (min, avg, max) = (1237,673, 1332,356, 1584,513), stdev = 142,969
+  CI (99.9%): [781,832, 1882,881] (assumes normal distribution)
+
+
+# Run complete. Total time: 00:00:18
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+Benchmark                                         (n)  Mode  Cnt     Score     Error  Units							
+MatrixMultiplicationBenchmarking.multiplication    10  avgt    5     0,005 ±   0,013  ms/op							
+MatrixMultiplicationBenchmarking.multiplication   100  avgt    5     0,811 ±   0,117  ms/op							
+MatrixMultiplicationBenchmarking.multiplication   500  avgt    5   117,102 ±   4,211  ms/op							
+MatrixMultiplicationBenchmarking.multiplication  1000  avgt    5  1332,356 ± 150,525  ms/op							
+							
+							
